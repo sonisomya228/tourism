@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="hb.css">
+
+  <title>Hotel Booking</title>
+
+  
+
+
+</head>
+
+<body>
+    <h1 style="color:blueviolet">Jabalpur Tourism</h1>
+    
+    
+    <nav class="navbar">
+        <a href="Home.html">home</a>
+        <a href="gallery.html">gallery</a>
+        
+        <a href="Heritage.html">Heritage</a>
+        <a href="Hotel_booking.html">Hotel Booking</a>
+        
+    </nav>
+  <h1>Hotel Booking Form</h1>
+  <div style="width:800px" >
+    <form action="/submit_booking" method="post" style="width:800px">
+
+        <p>Name:</p>
+    
+        <input type="text" id="name" name="name" required><br>
+    
+    
+        <p>Email:</p>
+    
+        <input type="email" id="email" name="email" required><br>
+    
+    
+        <p>Check-in Date:</p>
+    
+        <input type="date" id="checkin" name="checkin" required><br>
+    
+    
+        <p>Check-out Date:</p>
+    
+        <input type="date" id="checkout" name="checkout" required><br>
+    
+    
+        <p>Room Type:</p>
+    
+        <select id="room" name="room" required>
+    
+          <option value="standard">Standard Room</option>
+    
+          <option value="deluxe">Deluxe Room</option>
+    
+          <option value="suite">Suite</option>
+    
+        </select><br>
+    
+    
+        <p>Number of Adults:</p>
+    
+        <input type="number" id="adults" name="adults" min="1" max="4" required><br>
+    
+    
+        <p>Number of Children:</p>
+    
+        <input type="number" id="children" name="children" min="0" max="2" required><br>
+    
+    
+        <input type="submit" value="Book Now">
+    
+      </form>
+  </div>
+ 
+
+</body>
+
+</html>
